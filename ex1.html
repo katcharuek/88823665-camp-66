@@ -2,9 +2,78 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Workshop #HTML-From</title>
+    <style>
+        label {
+            display: inline-block; 
+            width: 140px;
+            vertical-align: top;
+        }
+        input {
+            margin-bottom: 10px; 
+        }
+        .form-group.address {
+            display: flex;
+            align-items: center;
+        }
+        button {
+        margin-right: 10px; 
+    }
+    </style>
 </head>
 <body>
-    
+    <h1>Workshop #HTML-From<h1> 
+    <h4><form>
+        <label for="fname">ชื่อ</label>
+        <input type="text" id="fname" name="fname"><br>
+        
+        <label for="lname">สกุล</label>
+        <input type="text" id="lname" name="lname"><br>
+        
+        <label for="D/M/Y">วัน/เดือน/ปีเกิด</label>
+        <input type="date"id="D/M/Y" name="D/M/Y" ><br> 
+
+        <label for="Age">อายุ</label>
+        <input type="text" id="Age" name="Age"><br>
+
+        <label for="Sex">เพศ</label>
+        <input type="radio" id="Sex1" name="vehicle1" value="Man">
+        <radio for="Sex1"> ชาย</radio>
+        <input type="radio" id="Sex2" name="vehicle2" value="Woman">
+        <radio for="Sex2"> หญิง</radio> 
+        <input type="radio" id="Sex3" name="vehicle3" value="XXX">
+        <radio for="Sex3"> ไม่ระบุ</radio>  <br>
+
+        <label for="picture">รูป</label>
+        <input type="file" id="picture" name="picture"><br>
+        
+        <div class="form-group.address ">
+        <label for="address">ที่อยู่</label>
+        <textarea rows="4" cols="40"></textarea>
+        </div>
+
+        <label for="color">สีที่ชอบ</label>
+        <select id="color" name="color" size="1">
+            <option value="red">สีแดง</option>
+            <option value="white">สีขาว</option>
+            <option value="yellow">สีเหลือง</option>
+            <option value="black">สีดำ</option>
+            </select><br>
+
+        <label for="Music_genre">แนวเพลงที่ชอบ</label>
+            <input type="radio" id="music1" name="music1" value="music1">
+            <radio for="music1"> เพื่อชีวิต</radio>
+            <input type="radio" id="music2" name="music2" value="music2">
+            <radio for="music2"> ลูกทุ่ง</radio>
+            <input type="radio" id="music3" name="music3" value="music3">
+            <radio for="music3"> Anime</radio>
+            <input type="radio" id="music4" name="music4" value="music4">
+            <radio for="music4"> อื่นๆ</radio> <br> <br>
+        <input type="checkbox"> ยินยอมให้เก็บข้อมูล <br><br>
+        <button type="reset" style="margin-right: 100px;">Reset</button>
+        <button type="submit">Submit</button>
+
+
+        </form></h4>
 </body>
 </html>
