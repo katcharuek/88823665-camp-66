@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="th">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,22 +10,21 @@
     <style>
         body {
             font-family: 'Prompt', sans-serif;
-            background-color: bisque;
-            }
+        }
     </style>
 </head>
+
 <body>
-    <div class="container mt-3">
+    <div class="container mt-3 px-5">
         <form>
-           
-            <div class="mb-1 row">
-                <label for="fname" class="col-sm-3 col-form-label">ชื่อ<label><p class="text-danger">*</p></label></label>
+            <div class="mb-3 row">
+                <label for="fname" class="col-sm-3 col-form-label">ชื่อ <span class="text-danger">*</span></label>
                 <div class="col-sm-9">
-                    <input class="form-control" type="text" placeholder="ชื่อ">
+                    <input class="form-control" type="text" id="fname" placeholder="ชื่อ" required>
                 </div>
             </div>
 
-           
+
             <div class="mb-3 row">
                 <label for="lname" class="col-sm-3 col-form-label">สกุล</label>
                 <div class="col-sm-9">
@@ -32,7 +32,7 @@
                 </div>
             </div>
 
-         
+
             <div class="mb-3 row">
                 <label for="dob" class="col-sm-3 col-form-label">วัน/เดือน/ปีเกิด</label>
                 <div class="col-sm-9">
@@ -48,7 +48,7 @@
                 </div>
             </div>
 
-           
+
             <fieldset class="mb-3 row">
                 <legend class="col-form-label col-sm-3 pt-0">เพศ</legend>
                 <div class="col-sm-9">
@@ -57,13 +57,14 @@
                         <label for="male" class="form-check-label">ชาย</label>
                     </div>
                     <div class="form-check">
-                        <input type="radio" id="female" name="gender" value="female" class="form-check-input">
+                        <input type="radio" id="female" name="gender" value="female" class="form-check-input" checked>
                         <label for="female" class="form-check-label">หญิง</label>
                     </div>
                 </div>
             </fieldset>
 
-           
+
+
             <div class="mb-3 row">
                 <label for="photo" class="col-sm-3 col-form-label">รูป</label>
                 <div class="col-sm-9">
@@ -71,7 +72,7 @@
                 </div>
             </div>
 
-            
+
             <div class="mb-3 row">
                 <label for="address" class="col-sm-3 col-form-label">ที่อยู่</label>
                 <div class="col-sm-9">
@@ -79,20 +80,26 @@
                 </div>
             </div>
 
-            
+
             <div class="mb-3 row">
                 <label for="color" class="col-sm-3 col-form-label">สีที่ชอบ</label>
                 <div class="col-sm-9">
-                    <input type="text" id="color" name="color" class="form-control">
+                    <select class="form-select" id="colorSelect">
+                        <option value="red">แดง</option>
+                        <option value="green">เขียว</option>
+                        <option value="blue">น้ำเงิน</option>
+                        <option value="yellow">เหลือง</option>
+                        <option value="black">ดำ</option>
+                    </select>
                 </div>
             </div>
 
-           
+
             <fieldset class="mb-3 row">
                 <legend class="col-form-label col-sm-3 pt-0">เพลงที่ชอบ</legend>
                 <div class="col-sm-9">
                     <div class="form-check">
-                        <input type="radio" id="life" name="music" value="life" class="form-check-input">
+                        <input type="radio" id="life" name="music" value="life" class="form-check-input" checked>
                         <label for="life" class="form-check-label">เพื่อชีวิต</label>
                     </div>
                     <div class="form-check">
@@ -106,24 +113,25 @@
                 </div>
             </fieldset>
 
-          
-            <div class="mb-3 row">
-                <div class="col-sm-9">
-                    <div class="form-check">
-                        <input type="checkbox" id="accept" name="accept" class="form-check-input" required>
-                        <label for="accept" class="form-check-label">ยินยอมให้เก็บข้อมูล</label>
-                    </div>
-                </div>
-            </div>
 
-        
-            <div class="row">
-                <div class="col-sm-9">
-                    <button type="reset" class="btn btn-secondary">Reset</button>
-                    <button type="submit" class="btn btn-primary">Submit </button>
+            <div class="mb-3 row">
+                <div class="form-check">
+                    <input type="checkbox" id="accept" name="accept" class="form-check-input" required>
+                    <label for="accept" class="form-check-label">ยินยอมให้เก็บข้อมูล</label>
                 </div>
             </div>
-        </form>
+    
+
+
+    <div class="mb-3 row">
+        <div class="col-md-11 col-form-label">
+            <button type="reset" class="btn btn-secondary">Reset </button>
+        </div>
+        <div class="col-md-1 col-form-label">
+            <button type="submit" class="btn btn-primary ">Submit </button>
+        </div>
+    </div>
+    </form>
     </div>
 </body>
 </html>
