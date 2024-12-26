@@ -7,6 +7,11 @@
     <title>สูตรคูณแม่ 2</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+    <style>
+        body {
+            background-color: #fef4c5; 
+        }
+    </style>
 </head>
 <body>
     <h1>สูตรคูณแม่ 2</h1>
