@@ -5,7 +5,36 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
     <style>
         body {
-            background-color: #fef4c5; 
+            background-color:rgb(166, 147, 147);
+            font-family: Arial, sans-serif;
+        }
+        h2, .form-label {
+            color: #4CAF50;
+        }
+        .container {
+            max-width: 1400px; 
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 6px 12px rgb(0, 0, 0); 
+        }
+        .border-dark {
+            background-color: #e8f5e9; 
+            border: 2px solid #4CAF50;
+            border-radius: 20px; 
+            box-shadow: 0 4px 8px rgb(0, 0, 0);
+            padding: 20px; 
+        }
+        .btn-success {
+            background-color: #4CAF50;
+            border-color: #4CAF50;
+        }
+        .btn-success:hover {
+            background-color: #45a049;
+            border-color: #45a049;
+        }
+        .alert-danger {
+            text-align: center;
         }
     </style>
 </head>
