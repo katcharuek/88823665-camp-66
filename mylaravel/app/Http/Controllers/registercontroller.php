@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\User;
 use Illuminate\Http\Request;
 
-class registerController extends Controller
+class RegisterController extends Controller
 {
     function index(){
         return view('register');

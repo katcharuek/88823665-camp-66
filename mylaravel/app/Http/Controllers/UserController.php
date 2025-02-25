@@ -12,7 +12,7 @@ class UserController extends Controller
     }
     function edit($id){
          $user = User::find($id);
-        return view('/edituser',['user' => $user]);
+        return view('/edit_user',['user' => $user]);
     }
     function edit_user(Request $req){
         $user = User::find($req -> id);
